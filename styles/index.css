@@ -393,6 +393,7 @@ a {
 }
 
 .blog__image {
+	display    : flex;
 	width      : 16.875rem;
 	align-self : center;
 }
