@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if (burgerMenu) {
 		burgerMenu.addEventListener('click', () => {
-			if (shortMenu) {
-				shortMenu.classList.add('active');
-			}
+			shortMenu?.classList.add('active');
 		});
 	}
 

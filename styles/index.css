@@ -811,7 +811,8 @@ a {
 
 .blog__button,
 .subscribe__form-submit {
-	transition : color, border 0.3s ease-in-out;
+	transition          : color 0.3s ease-in-out;
+	transition-property : background, color, border;
 }
 
 .fill-origin,
@@ -848,15 +849,12 @@ a {
 }
 
 .blog__button:active,
-.blog__button:hover {
-	color        : var(--hover-color);
-	border-color : var(--hover-color);
-}
-
+.blog__button:hover,
 .subscribe__form-submit:active,
 .subscribe__form-submit:hover {
-	color        : var(--hover-color-second);
-	border-color : var(--hover-color-second);
+	background-color : var(--font-color-primary);
+	color            : var(--font-color-secondary);
+	border-color     : var(--font-color-secondary);
 }
 
 @media (hover : hover) {
