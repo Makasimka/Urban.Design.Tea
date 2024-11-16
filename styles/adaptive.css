@@ -409,6 +409,14 @@
 		flex-direction : row;
 	}
 
+	.blog__item:nth-child(odd) {
+		align-self : auto;
+	}
+
+	.blog__item:nth-child(even) {
+		align-self : auto;
+	}
+
 	.blog__image {
 		width : 10rem;
 	}
