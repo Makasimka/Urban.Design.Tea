@@ -708,12 +708,12 @@ a {
 	font-size   : 0.72rem;
 }
 
-.footer__cards {
+.footer__payment {
 	display : flex;
 	gap     : 1.25rem;
 }
 
-.footer__cards-icon {
+.footer__payment-icon {
 	display         : flex;
 	justify-content : center;
 	align-items     : center;
