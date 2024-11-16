@@ -725,6 +725,10 @@ a {
 	align-items     : center;
 }
 
+.footer__payment-icon img {
+	height : 0.6rem;
+}
+
 .footer__products,
 .footer__company {
 	display        : flex;
