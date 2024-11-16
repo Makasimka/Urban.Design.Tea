@@ -15,6 +15,10 @@
 		font-size : 1.4rem;
 	}
 
+	.header__actions {
+		gap : 1.6rem;
+	}
+
 	.header__content {
 		padding : 0 0.88rem;
 	}
@@ -81,6 +85,10 @@
 
 	.menu {
 		margin : 0 4rem;
+	}
+
+	.header__actions {
+		gap : 2rem;
 	}
 
 	.header__content {
@@ -358,7 +366,7 @@
 	}
 
 	.header__actions {
-		gap : 2.2rem;
+		gap : 3rem;
 	}
 
 	h1 {
@@ -471,7 +479,7 @@
 		font-size : 0.72rem;
 	}
 
-	.reviews__username {
+	.reviews__author {
 		font-size : 0.78rem;
 	}
 
