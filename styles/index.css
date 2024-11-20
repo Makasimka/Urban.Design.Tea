@@ -14,6 +14,8 @@
 	--color-svg-hover        : #665235;
 	--color-svg-hover-second : #324a69;
 
+	--color-input            : #b8b58b;
+
 	--font-family            : 'Open Sans', sans-serif;
 	--second-family          : 'Cormorant', sans-serif;
 	--third-family           : 'IM FELL Great Primer SC', sans-serif;
@@ -110,6 +112,13 @@ a {
 	opacity        : 1;
 }
 
+.link--blog::after {
+	content     : url(../images/svg/arrow-right.svg);
+	margin-left : 0.5rem;
+	transition  : margin 0.3s ease-in-out;
+}
+
+/* logo */
 .logo {
 	order       : 1;
 	margin-left : 4.6rem;
@@ -147,6 +156,7 @@ a {
 	font-size : 0.875rem;
 }
 
+/* nav */
 .nav-header {
 	display : none;
 }
@@ -193,7 +203,7 @@ a {
 	font-weight : 300;
 }
 
-
+/* header */
 .header {
 	padding : 0.65rem 0;
 }
@@ -448,11 +458,6 @@ a {
 	cursor      : pointer;
 }
 
-.blog__link::after {
-	content     : url(../images/svg/arrow-right.svg);
-	margin-left : 0.5rem;
-}
-
 /** subscribe **/
 .subscribe {
 	display        : flex;
@@ -499,8 +504,8 @@ a {
 
 .subscribe__form-input {
 	padding       : 0.4rem 0.8rem;
-	color         : #b8b58b;
-	border-bottom : 0.125rem solid #b8b58b;
+	color         : var(--color-input);
+	border-bottom : 0.125rem solid var(--color-input);
 	width         : calc(100% - 8rem);
 	font-size     : 1rem;
 }
@@ -509,12 +514,12 @@ a {
 	font-family : var(--font-family), sans-serif;
 	font-weight : 300;
 	font-size   : 1rem;
-	color       : #b8b58b;
+	color       : var(--color-input);
 }
 
 .subscribe__form-submit {
-	background : #ffffff;
-	border     : 0.06rem solid #151618;
+	background : var(--bg-color);
+	border     : 0.06rem solid var(--font-color-primary);
 	padding    : 0.75rem 2.5rem;
 	width      : 7.25rem;
 	height     : 3rem;
@@ -529,7 +534,7 @@ a {
 }
 
 .subscribe__form-checkbox {
-	background-color : #ffffff;
+	background-color : var(--bg-color);
 	cursor           : default;
 	appearance       : auto;
 }
@@ -557,7 +562,7 @@ a {
 	font-size      : 0.65rem;
 	text-transform : uppercase;
 	text-align     : center;
-	color          : #151618;
+	color          : var(--font-color-primary);
 }
 
 .priority__item {
@@ -868,7 +873,11 @@ a {
 }
 
 @media (hover : hover) {
-	.link::after {
+	.link:hover::after {
+		margin-left: 0.7rem;
+	}
+
+	.link::before {
 		content          : '';
 		position         : absolute;
 		width            : 108%;
@@ -880,11 +889,11 @@ a {
 		transition       : opacity 0.26s ease-in-out;
 	}
 
-	.link--second::after {
+	.link--second::before {
 		background-color : var(--link-color-line-second);
 	}
 
-	.link:hover::after {
+	.link:hover::before {
 		opacity : 1;
 	}
 }
